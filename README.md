@@ -12,15 +12,14 @@ The following **required** functionality is complete:
 
 * [x] User sees an app icon on the home screen and a styled launch screen.
 * [x] User can view and scroll through a list of movies now playing in theaters.
-* [x]User can view the movie posters in each row.
+* [x] User can view the movie posters in each row.
 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<iframe src='https://imgur.com/gallery/FoB9oKB'> </iframe>
-
+<img src="https://github.com/trangdoan982/Flix/blob/master/Flix.gif">
 ## License
 
     Copyright [2020] [Trang Doan]

@@ -1,5 +1,5 @@
 
-#Assignment 1 - *Flix Movie app*
+# Assignment 1 - *Flix Movie app*
 
 
 Submitted by: **Trang Doan**

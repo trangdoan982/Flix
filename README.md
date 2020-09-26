@@ -19,7 +19,7 @@ The following **required** functionality is complete:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/gallery/FoB9oKB' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<iframe src='https://imgur.com/gallery/FoB9oKB' title='Video Walkthrough' width='' alt='Video Walkthrough'> </iframe>
 
 ## License
 

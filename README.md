@@ -19,7 +19,7 @@ The following **required** functionality is complete:
 
 Here's a walkthrough of implemented user stories:
 
-<img src="https://github.com/trangdoan982/Flix/blob/master/Flix.gif">
+<img src="https://media.giphy.com/media/jGpIUN5dk9VGrz8i29/giphy.gif">
 ## License
 
     Copyright [2020] [Trang Doan]

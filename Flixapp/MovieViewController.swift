@@ -29,7 +29,6 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
             print(error.localizedDescription)
          } else if let data = data {
             let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-            
             print(dataDictionary)
             self.movies = dataDictionary["results"] as! [[String:Any]]
             
@@ -44,15 +43,7 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
   
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return movies.count
@@ -77,5 +68,29 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         return cell
     }
+    
+    
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        
+        
+        //find selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        print("Loading now")
+        
+        //Pass movies into MovieDetailsViewController
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+    }
+    
 }
 
